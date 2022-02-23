@@ -1,0 +1,74 @@
+.progressBar {
+  padding-bottom: 60px;
+  background-color: #eee;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  position: relative;
+}
+.circle {
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+}
+.main-bg {
+  background-color: var(--primary-base-color) !important;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.stick {
+  height: 3px;
+  flex: 1;
+  background: #d9d9d9;
+}
+.stick2 {
+  height: 3px;
+  width: 300px;
+  background: #d9d9d9;
+}
+.gap {
+  gap: 10px;
+}
+.label {
+  position: absolute;
+  top: 50px;
+  width: max-content;
+  font-weight: bold;
+  font-size: 15px;
+}
+.disabledBar {
+  background: linear-gradient(
+    to right,
+    #d9d9d9 50%,
+    var(--primary-base-color) 50%
+  );
+  animation: anim 1s linear forwards;
+  background-size: 200%;
+}
+
+@keyframes anim {
+  from {
+    background-position-x: 200%;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+.color-gray {
+  color: #d9d9d9;
+}
